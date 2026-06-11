@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Email Security Check for Bunbury Conveyancers: Verify SPF, DMARC and DKIM Before BEC Reaches Your Settlement Inbox</title>
+<meta name="description" content="You run a small settlement practice in Bunbury. Most of your transactions come through email — contracts, payment instructions, trust account details. You have heard about wire-fraud emails impersonat">
+<link rel="canonical" href="https://exegete.com.au/drmo/conveyancers/bunbury/arnecc-msp-bec/">
+<meta property="og:title" content="Email Security Check for Bunbury Conveyancers: Verify SPF, DMARC and DKIM Before BEC Reaches Your Settlement Inbox">
+<meta property="og:description" content="You run a small settlement practice in Bunbury. Most of your transactions come through email — contracts, payment instructions, trust account details. You have heard about wire-fraud emails impersonat">
+<meta property="og:url" content="https://exegete.com.au/drmo/conveyancers/bunbury/arnecc-msp-bec/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Exegete">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Email Security Check for Bunbury Conveyancers: Verify SPF, DMARC and DKIM Before BEC Reaches Your Settlement Inbox">
+<meta name="twitter:description" content="You run a small settlement practice in Bunbury. Most of your transactions come through email — contracts, payment instructions, trust account details. You have heard about wire-fraud emails impersonat">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+/* Door-specific overrides + content typography */
+.door-main { padding-top: 74px; }
+.door-content { max-width: 820px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+.door-content h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-bottom: 1.6rem; font-weight: 800; line-height: 1.2; color: var(--text-primary); }
+.door-content h2 { font-size: 1.4rem; margin: 2.25rem 0 1rem; font-weight: 700; color: var(--text-primary); }
+.door-content h3 { font-size: 1.1rem; margin: 1.75rem 0 0.75rem; font-weight: 600; color: var(--text-primary); }
+.door-content p { margin: 0 0 1.1rem; color: var(--text-secondary); font-size: 1.05rem; }
+.door-content ul, .door-content ol { margin: 0 0 1.25rem; padding-left: 1.5rem; }
+.door-content li { margin: 0 0 0.5rem; color: var(--text-secondary); font-size: 1.05rem; }
+.door-content a { color: var(--primary-color); text-decoration: underline; text-underline-offset: 2px; }
+.door-content a:hover { color: var(--primary-hover); }
+.door-content blockquote { border-left: 3px solid var(--border-color); padding: 0.5rem 1rem; margin: 1.5rem 0; color: var(--text-secondary); font-style: italic; }
+.door-content code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 0.875em; background: var(--background-accent); padding: 0.125rem 0.375rem; border-radius: 3px; }
+.door-content pre { background: var(--background-accent); padding: 1rem; border-radius: var(--radius); overflow-x: auto; font-size: 0.875rem; line-height: 1.5; }
+.door-content pre code { background: transparent; padding: 0; }
+.door-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
+.door-content th, .door-content td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border-color); }
+.door-content th { background: var(--background-secondary); font-weight: 600; color: var(--text-primary); }
+.door-content .cta { display: inline-block; background: var(--primary-color); color: #ffffff; padding: 0.85rem 1.35rem; border-radius: 10px; text-decoration: none; font-weight: 700; margin: 0.5rem 0 1.5rem; transition: background-color 0.2s ease, transform 0.2s ease; }
+.door-content .cta:hover { background: var(--primary-hover); color: #ffffff; transform: translateY(-1px); text-decoration: none; }
+.door-content .cta a { color: #ffffff; text-decoration: none; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Email Security Check for Bunbury Conveyancers: SPF, DMARC and DKIM Verification",
+  "about": [
+    {"@type": "DefinedTerm", "name": "Business Email Compromise"},
+    {"@type": "DefinedTerm", "name": "SPF, DKIM, DMARC email authentication"},
+    {"@type": "GovernmentService", "name": "ARNECC Model Participation Rules", "url": "https://www.arnecc.gov.au/publications/model-participation-rules/"}
+  ],
+  "audience": {"@type": "Audience", "audienceType": "Conveyancer", "geographicArea": {"@type": "City", "name": "Bunbury"}},
+  "publisher": {"@type": "Organization", "name": "Exegete", "url": "https://exegete.com.au"},
+  "offers": {
+    "@type": "Offer",
+    "name": "Email Security Check (SPF/DMARC/DKIM)",
+    "price": "99",
+    "priceCurrency": "AUD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://exegete.com.au/checkout/L1_email_security_check",
+    "seller": {"@type": "Organization", "name": "Exegete"},
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Email Security Check",
+      "serviceType": "Email authentication diagnostic (SPF, DKIM, DMARC)",
+      "provider": {"@type": "Organization", "name": "Exegete"}
+    }
+  }
+}
+</script>
+</head>
+<body class="light-theme">
+<header>
+<nav class="light-nav">
+<div class="nav-container">
+<a href="/" class="nav-logo">Exegete</a>
+<ul class="nav-menu">
+<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="/drmo/" class="nav-link">DRMO</a></li>
+<li class="nav-item"><a href="/privacy/" class="nav-link">Privacy</a></li>
+</ul>
+<div class="nav-controls">
+<div class="theme-toggle" id="themeToggle" title="Toggle theme">
+<svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z"/></svg>
+<svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.4 6.35,17.41C9.37,20.43 14,20.54 17.33,17.97Z"/></svg>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<main class="light-main door-main">
+<article class="door-content">
+<h1>Email Security Check for Bunbury Conveyancers: Verify SPF, DMARC and DKIM Before BEC Reaches Your Settlement Inbox</h1>
+<p>You run a small settlement practice in Bunbury. Most of your transactions come through email — contracts, payment instructions, trust account details. You have heard about wire-fraud emails impersonating other firms&rsquo; domains, but you have no way to tell whether your own firm&rsquo;s email is configured to make impersonation harder or easier. The Email Security Check is a one-off diagnostic that tells you, in plain English, whether the three published email authentication standards are set up correctly on your domain.</p>
+<h2>Why it matters now</h2>
+<p>Subscribers to an Electronic Lodgment Network in Western Australia operate under Participation Rules made under the Electronic Conveyancing National Law. The Australian Registrars&rsquo; National Electronic Conveyancing Council publishes the Model Participation Rules — currently Version 7 (January 2024) — which each State Registrar adopts as the binding rules in their jurisdiction. Those rules require Subscribers to maintain security practices around access, identity verification of clients, and the handling of certifications. Business email compromise targeting payment instructions sits squarely inside that obligation surface: an impersonated email that triggers a misdirected trust account movement is both a settlement-risk event and a Participation Rules compliance event. The Australian Cyber Security Centre publishes general guidance on BEC and email authentication at https://www.cyber.gov.au/, and ACCC ScamWatch tracks payment-redirection scams at https://www.scamwatch.gov.au/. Email authentication — SPF, DKIM, and DMARC — is the structural baseline that determines whether attackers can spoof your firm&rsquo;s domain at all.</p>
+<h2>The 5-minute view</h2>
+<ul>
+<li>SPF (Sender Policy Framework) is a DNS record listing which mail servers are authorised to send email from your domain</li>
+<li>DKIM (DomainKeys Identified Mail) is a cryptographic signature on outbound mail that lets receiving servers verify the message has not been tampered with in transit</li>
+<li>DMARC (Domain-based Message Authentication, Reporting and Conformance) is a DNS policy that tells receiving servers what to do when SPF or DKIM checks fail — and reports back when failures occur</li>
+<li>A weak or missing DMARC policy (no record, or policy set to <code>p=none</code>) means a receiving server has no instruction to reject spoofed mail claiming to be from your firm</li>
+<li>ARNECC Model Participation Rules Version 7 (January 2024) sets out Subscriber security obligations that are enlivened whenever client trust funds move through email-coordinated instructions</li>
+<li>Email authentication is configured at the DNS level — it is not visible inside Outlook, Gmail, or your practice management system, and most firms have never had it checked</li>
+<li>Bunbury settlement practices typically rely on a mix of Microsoft 365, Google Workspace, or a hosted provider — each requires distinct SPF, DKIM, and DMARC records to be set correctly</li>
+</ul>
+<h2>What DRMO does about it</h2>
+<p>The Email Security Check is the L1 productised diagnostic in the DRMO service catalogue. You provide your firm&rsquo;s primary email domain. We run an external check against the public DNS records for that domain, covering: presence and syntax of the SPF record, presence and policy strength of the DMARC record, DKIM selector discovery and signing-key validation, alignment between SPF/DKIM and the visible <code>From</code> address, and any obvious misconfigurations (multiple SPF records, overly permissive <code>+all</code>, missing reporting addresses). This is the same first-pass diagnostic that runs as Step 1 of the Pre-Settlement Shield consulting engagement, productised here for single-domain use without a discovery call.</p>
+<h2>The deliverable</h2>
+<ul>
+<li>PDF report scoped to one email domain</li>
+<li>Per-record findings: SPF, DKIM, DMARC — current state, plain-English interpretation, and Red / Amber / Green status</li>
+<li>Specific DNS record values to add or change, written so they can be handed to your IT provider without further translation</li>
+<li>Plain-English summary suitable for principal review and file note</li>
+<li>Delivered via email within 1 business day of payment and domain submission</li>
+</ul>
+<h2>CTA</h2>
+<p><span class="cta"><a href="https://buy.stripe.com/cNi5kCa3k7RWbzDfjW2sM01">Run the Email Security Check — AUD $99</a></span></p>
+<p>A single-domain productised offer. No discovery call required. Suitable for any Bunbury or South West conveyancing practice that has not had its email authentication independently reviewed in the last 12 months.</p>
+<p>If your firm coordinates settlements through multiple domains or you want ongoing monitoring across all transactions, the Email Security Check is also the entry step into the broader Pre-Settlement Shield engagement.</p>
+<h2>Sources</h2>
+<ol>
+<li>Australian Registrars&rsquo; National Electronic Conveyancing Council — <em>Model Participation Rules</em> (Version 7, January 2024): https://www.arnecc.gov.au/publications/model-participation-rules/</li>
+<li>Australian Cyber Security Centre — guidance on business email compromise and email authentication (domain root): https://www.cyber.gov.au/</li>
+<li>Australian Competition and Consumer Commission — ScamWatch (payment-redirection scam reporting, domain root): https://www.scamwatch.gov.au/</li>
+</ol>
+<p>DRMO capability references:</p>
+<ul>
+<li>Email Security Check (L1 service shape, SPF/DMARC/DKIM diagnostic)</li>
+<li>Pre-Settlement Shield (L3 Shield package, Step 1 incorporates the same diagnostic)</li>
+</ul>
+</article>
+</main>
+<footer class="light-footer">
+<div class="container">
+&copy; 2026 Exegete. <a href="/privacy/">Privacy Policy</a> &middot; <a href="mailto:andre.fabre1@outlook.com">Contact</a><br>
+DRMO is a service of Andre Fabre, Perth WA. We do not provide legal or financial advice.
+</div>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>
