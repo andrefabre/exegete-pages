@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pre-Settlement Flash Audit for Queensland Conveyancers: Detect Settlement Hijack Indicators Before Funds Move</title>
+<meta name="description" content="You&#x27;ve spent weeks on a Queensland settlement file. Forty-eight hours out, something feels off — a late instruction change from the &quot;other side,&quot; a fresh device prompt in your ELN workspace, or a Veri">
+<link rel="canonical" href="https://exegete.com.au/drmo/conveyancers/qld/arnecc-msp-settlement-hijack/">
+<meta property="og:title" content="Pre-Settlement Flash Audit for Queensland Conveyancers: Detect Settlement Hijack Indicators Before Funds Move">
+<meta property="og:description" content="You&#x27;ve spent weeks on a Queensland settlement file. Forty-eight hours out, something feels off — a late instruction change from the &quot;other side,&quot; a fresh device prompt in your ELN workspace, or a Veri">
+<meta property="og:url" content="https://exegete.com.au/drmo/conveyancers/qld/arnecc-msp-settlement-hijack/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Exegete">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pre-Settlement Flash Audit for Queensland Conveyancers: Detect Settlement Hijack Indicators Before Funds Move">
+<meta name="twitter:description" content="You&#x27;ve spent weeks on a Queensland settlement file. Forty-eight hours out, something feels off — a late instruction change from the &quot;other side,&quot; a fresh device prompt in your ELN workspace, or a Veri">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+/* Door-specific overrides + content typography */
+.door-main { padding-top: 74px; }
+.door-content { max-width: 820px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+.door-content h1 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-bottom: 1.6rem; font-weight: 800; line-height: 1.2; color: var(--text-primary); }
+.door-content h2 { font-size: 1.4rem; margin: 2.25rem 0 1rem; font-weight: 700; color: var(--text-primary); }
+.door-content h3 { font-size: 1.1rem; margin: 1.75rem 0 0.75rem; font-weight: 600; color: var(--text-primary); }
+.door-content p { margin: 0 0 1.1rem; color: var(--text-secondary); font-size: 1.05rem; }
+.door-content ul, .door-content ol { margin: 0 0 1.25rem; padding-left: 1.5rem; }
+.door-content li { margin: 0 0 0.5rem; color: var(--text-secondary); font-size: 1.05rem; }
+.door-content a { color: var(--primary-color); text-decoration: underline; text-underline-offset: 2px; }
+.door-content a:hover { color: var(--primary-hover); }
+.door-content blockquote { border-left: 3px solid var(--border-color); padding: 0.5rem 1rem; margin: 1.5rem 0; color: var(--text-secondary); font-style: italic; }
+.door-content code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 0.875em; background: var(--background-accent); padding: 0.125rem 0.375rem; border-radius: 3px; }
+.door-content pre { background: var(--background-accent); padding: 1rem; border-radius: var(--radius); overflow-x: auto; font-size: 0.875rem; line-height: 1.5; }
+.door-content pre code { background: transparent; padding: 0; }
+.door-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
+.door-content th, .door-content td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border-color); }
+.door-content th { background: var(--background-secondary); font-weight: 600; color: var(--text-primary); }
+.door-content .cta { display: inline-block; background: var(--primary-color); color: #ffffff; padding: 0.85rem 1.35rem; border-radius: 10px; text-decoration: none; font-weight: 700; margin: 0.5rem 0 1.5rem; transition: background-color 0.2s ease, transform 0.2s ease; }
+.door-content .cta:hover { background: var(--primary-hover); color: #ffffff; transform: translateY(-1px); text-decoration: none; }
+.door-content .cta a { color: #ffffff; text-decoration: none; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Pre-Settlement Flash Audit for Queensland Conveyancers: Detect Settlement Hijack Indicators Before Funds Move",
+  "about": [
+    {"@type": "DefinedTerm", "name": "ARNECC Model Participation Rules", "inDefinedTermSet": "https://www.arnecc.gov.au/publications/model-participation-rules/"},
+    {"@type": "Thing", "name": "Settlement hijack", "description": "Compromise of identity verification, Client Authorisation, or Digital Certificate to redirect electronic conveyancing settlement proceeds."}
+  ],
+  "audience": {"@type": "Audience", "audienceType": "Conveyancer", "geographicArea": {"@type": "AdministrativeArea", "name": "Queensland"}},
+  "publisher": {"@type": "Organization", "name": "Exegete", "url": "https://exegete.com.au"},
+  "offers": {
+    "@type": "Offer",
+    "name": "Pre-Settlement Flash Audit",
+    "price": "499",
+    "priceCurrency": "AUD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://exegete.com.au/checkout/L2_pre_settlement_audit",
+    "seller": {"@type": "Organization", "name": "Exegete"},
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Pre-Settlement Flash Audit",
+      "serviceType": "Pre-settlement transaction risk audit aligned to ARNECC Model Participation Rules",
+      "provider": {"@type": "Organization", "name": "Exegete"},
+      "areaServed": {"@type": "AdministrativeArea", "name": "Queensland"}
+    }
+  }
+}
+</script>
+</head>
+<body class="light-theme">
+<header>
+<nav class="light-nav">
+<div class="nav-container">
+<a href="/" class="nav-logo">Exegesis</a>
+<ul class="nav-menu">
+<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="/drmo/" class="nav-link">DRMO</a></li>
+<li class="nav-item"><a href="/legal/" class="nav-link">Legal</a></li>
+<li class="nav-item"><a href="/dlv/" class="nav-link">DLV</a></li>
+<li class="nav-item"><a href="/cyber/" class="nav-link">Cyber</a></li>
+<li class="nav-item"><a href="/about/" class="nav-link">About</a></li>
+</ul>
+<div class="nav-controls">
+<div class="theme-toggle" id="themeToggle" title="Toggle theme">
+<svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z"/></svg>
+<svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.4 6.35,17.41C9.37,20.43 14,20.54 17.33,17.97Z"/></svg>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<main class="light-main door-main">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol class="breadcrumb-list"><li><a href="/">Home</a></li><li><a href="/drmo/">DRMO</a></li><li><a href="/drmo/services/">Services</a></li><li aria-current="page">Pre-Settlement Flash Audit for Queensland Conveyancers: Detect Settlement Hijack Indicators Before Funds Move</li></ol></nav>
+<article class="door-content">
+<h1>Pre-Settlement Flash Audit for Queensland Conveyancers: Detect Settlement Hijack Indicators Before Funds Move</h1>
+<p>You&rsquo;ve spent weeks on a Queensland settlement file. Forty-eight hours out, something feels off — a late instruction change from the &ldquo;other side,&rdquo; a fresh device prompt in your ELN workspace, or a Verification of Identity that ran cleaner than usual. Under the ARNECC Model Participation Rules you carry the Subscriber&rsquo;s obligation to verify identity, hold a valid Client Authorisation, and secure your Digital Certificate. The Pre-Settlement Flash Audit is a one-shot diagnostic that checks a specific transaction against the indicators most often present when an attacker is attempting to hijack settlement.</p>
+<h2>Why it matters now</h2>
+<p>Queensland conveyancers operate as Subscribers under the Electronic Conveyancing National Law, with Participation Rules determined by the Queensland Registrar of Titles based on the ARNECC Model Participation Rules (Version 7, January 2024). Those rules impose obligations on Subscribers covering Verification of Identity, Client Authorisation, Digital Certificate security, and retention of evidence. Settlement hijack — where an attacker compromises identity verification, impersonates a party, or takes control of a Subscriber&rsquo;s Digital Certificate to redirect proceeds — sits squarely inside the operational risk the Participation Rules are designed to contain. The Australian Cyber Security Centre publishes general guidance on credential theft and account takeover at https://www.cyber.gov.au/, and ARNECC issues Notices to Subscribers covering emerging compliance risks at https://www.arnecc.gov.au/.</p>
+<h2>The 5-minute view</h2>
+<ul>
+<li>Queensland Subscribers operate under Participation Rules determined by the Queensland Registrar, modelled on ARNECC&rsquo;s Model Participation Rules Version 7 (published January 2024)</li>
+<li>The Model Participation Rules require Subscribers to take &ldquo;reasonable steps&rdquo; to verify the identity of each Client and maintain evidentiary records supporting that verification</li>
+<li>The Model Participation Rules require Subscribers to keep Digital Certificates secure and prohibit their use by unauthorised persons</li>
+<li>Settlement hijack patterns commonly involve: late changes to payee account details, identity documents presented under time pressure, unfamiliar devices or IP addresses signing into the Subscriber&rsquo;s ELN account, and last-minute substitution of the legal representative on the other side</li>
+<li>The ARNECC Model Participation Rules require retention of records (including VOI evidence and Client Authorisations) for seven years after the relevant conveyancing transaction</li>
+<li>A pre-settlement audit reviews one specific transaction against these structural risk indicators before funds and title move</li>
+</ul>
+<h2>What DRMO does about it</h2>
+<p>The Pre-Settlement Flash Audit is a single-transaction diagnostic delivered against a specific Queensland settlement file. You submit the file reference, the VOI evidence pack, the Client Authorisation, and the recent activity log from your ELN workspace (and any email correspondence on payment instructions). DRMO runs a fixed-scope review covering: VOI evidence sufficiency against the categories described in the Model Participation Rules, Client Authorisation completeness, Digital Certificate usage signals (device, location, and timing anomalies on the ELN session log), late-stage instruction changes against known hijack signatures, and the retention posture of the file&rsquo;s evidentiary record. The deliverable is a 15-page PDF audit report identifying the specific indicators present and the recommended verification steps before settlement. This is the same diagnostic offered to conveyancers in other jurisdictions, scoped to the Queensland Participation Rules context.</p>
+<h2>The deliverable</h2>
+<ul>
+<li>15-page PDF audit report scoped to one Queensland settlement file</li>
+<li>Executive summary with a Red / Amber / Green status and the recommended next action before funds release</li>
+<li>Per-indicator review covering VOI sufficiency, Client Authorisation, Digital Certificate session signals, and late-stage instruction changes — each cited to the Model Participation Rules clause it maps to</li>
+<li>Verification checklist for your settlement team to complete before authorising the financial settlement</li>
+<li>Evidentiary record check against the seven-year retention obligation</li>
+<li>Delivered via email within 1 business day of file submission and payment</li>
+</ul>
+<h2>CTA</h2>
+<p><span class="cta"><a href="https://buy.stripe.com/eVq5kCfnEgos0UZfjW2sM00">Run the Pre-Settlement Flash Audit — AUD $499</a></span></p>
+<p>A single-transaction productised offer. No discovery call required. Suitable for any Queensland conveyancing file in the 14 days before settlement, particularly where identity verification has run under time pressure, instruction changes have arrived late, or unfamiliar device activity has appeared on your ELN account.</p>
+<p>This is operational support for the Subscriber obligations under the Queensland Participation Rules. It is not legal advice and does not replace your firm&rsquo;s own compliance review.</p>
+<h2>Sources</h2>
+<ol>
+<li>Australian Registrars&rsquo; National Electronic Conveyancing Council — <em>Model Participation Rules</em> (Version 7, January 2024): https://www.arnecc.gov.au/publications/model-participation-rules/</li>
+<li>Australian Registrars&rsquo; National Electronic Conveyancing Council — Notices to Subscribers and Subscriber Compliance Guidance: https://www.arnecc.gov.au/</li>
+<li>Australian Cyber Security Centre — general guidance on credential theft and account takeover: https://www.cyber.gov.au/</li>
+</ol>
+<p>DRMO capability references:</p>
+<ul>
+<li>Pre-Settlement Flash Audit (L2 service shape, single-transaction productised offer)</li>
+<li>Pre-Settlement Shield (L3 consultative package, of which the Flash Audit is the productised diagnostic step)</li>
+</ul>
+</article>
+</main>
+<footer class="light-footer">
+<div class="container">
+<p>&copy; 2026 Exegesis. ABN 81 554 376 814. <a href="/privacy/">Privacy</a> &middot; <a href="/about/">About</a> &middot; <a href="mailto:andre.fabre1@outlook.com">Contact</a></p>
+</div>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>
